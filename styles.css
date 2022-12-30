@@ -67,6 +67,10 @@ body {
   flex-direction: column;
   border: 2px solid black;
   padding: 10px;
+  position: absolute;
+  top: 30%;
+  z-index: 15;
+  background-color: white;
 }
 
 .modal-title {

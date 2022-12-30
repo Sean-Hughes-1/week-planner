@@ -1,2 +1,10 @@
 var addButton = document.getElementById('add-entry');
-console.log('add-entry: ', addButton);
+var modalHider = document.getElementById('modal-hider');
+addButton.addEventListener('click', handleModal);
+function handleModal(event) {
+
+}
+
+function toggleView {
+
+}
