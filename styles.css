@@ -52,3 +52,25 @@ body {
 .hidden {
   display: none;
 }
+
+.text-area {
+  width: 95%;
+  height: 100px;
+  resize: none;
+}
+
+.modal {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  font-weight: 100;
+}
+
+.drop-down {
+  text-align: left;
+  padding: 1rem 0;
+}
