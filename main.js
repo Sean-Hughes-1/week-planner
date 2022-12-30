@@ -5,6 +5,10 @@ function handleModal(event) {
 
 }
 
-function toggleView {
-
+function toggleView(show) {
+  if (show) {
+    modalHider.classList.remove('hidden');
+  } else {
+    modalHider.className = 'hidden';
+  }
 }
