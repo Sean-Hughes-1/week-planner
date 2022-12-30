@@ -5,13 +5,14 @@ var submitButton = document.getElementById('submit-entry');
 var day = document.getElementById('days');
 var time = document.getElementById('time');
 var notes = document.getElementById('text-area');
+var entryForm = document.getElementById('entry-form');
 var data = {
   entries: []
 };
 
 var previousData = localStorage.getItem('planner-data');
 if (previousData !== null) {
-  data = JSON.parce(previousData);
+  data = JSON.parse(previousData);
 }
 window.addEventListener('beforeunload', handleBeforeUnload);
 function handleBeforeUnload(event) {
@@ -32,6 +33,8 @@ function handleSubmit(event) {
   formData.time = time.value;
   formData.notes = notes.value;
   data.entries.push(formData);
+  entryForm.reset();
+  toggleView(false);
 }
 
 function toggleView(show) {

@@ -20,7 +20,7 @@ body {
 }
 
 .button-div {
-  height: 700px;
+  margin-top: 25px;
   display: flex;
   align-items: center;
 }
