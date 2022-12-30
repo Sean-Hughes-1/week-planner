@@ -57,13 +57,16 @@ body {
   width: 95%;
   height: 100px;
   resize: none;
+  padding-left: 15px;
 }
 
 .modal {
-  width: 500px;
-  height: 250px;
+  width: 600px;
+  height: 275px;
   display: flex;
   flex-direction: column;
+  border: 2px solid black;
+  padding: 10px;
 }
 
 .modal-title {
@@ -72,5 +75,27 @@ body {
 
 .drop-down {
   text-align: left;
-  padding: 1rem 0;
+  padding: 1rem 0 1rem 20px;
+}
+
+.submit {
+  padding-top: 10px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.submit-button {
+  height: 30px;
+  width: 100px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+  margin: 0.5rem;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: rgb(60, 0, 60);
 }
