@@ -26,8 +26,8 @@
         <div class="form-container">
           <form id="entry-form">
             <div class="drop-down">
-              <select name="days" id="days">
-                <option value="DayOfWeek">Day of Week</option>
+              <select name="days" id="days" required>
+                <option value="">Day of the Week</option>
                 <option value="Monday">Monday</option>
                 <option value="Tuesday">Tuesday</option>
                 <option value="Wednesday">Wednesday</option>
@@ -36,8 +36,8 @@
                 <option value="Saturday">Saturday</option>
                 <option value="Sunday">Sunday</option>
               </select>
-              <select name="time" id="time">
-                <option value="TimeofDay">Time</option>
+              <select name="time" id="time" required>
+                <option value="">Time</option>
                 <option value="0500">05:00</option>
                 <option value="0600">06:00</option>
                 <option value="0700">07:00</option>
@@ -61,7 +61,7 @@
               </select>
             </div>
             <div class="text-area">
-              <textarea id="text-area" class="text-area">Description...</textarea>
+              <textarea required id="text-area" class="text-area" placeholder="Description..."></textarea>
             </div>
             <div class="submit">
               <button type="submit" id="submit-entry" class="submit-button">Submit</button>
@@ -71,5 +71,6 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script src="data.js"></script>
 </body>
 </html>
