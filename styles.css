@@ -103,3 +103,13 @@ body {
   cursor: pointer;
   background-color: rgb(60, 0, 60);
 }
+
+.modal-hider {
+  width: 600px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  position: absolute;
+  top: 30%;
+}
