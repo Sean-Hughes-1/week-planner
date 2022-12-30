@@ -1,3 +1,7 @@
+* {
+  font-family: "font-family:Comic Neue", cursive;
+}
+
 .container {
   display: flex;
   width: 800px;
@@ -14,4 +18,27 @@
 .button-div {
   height: 700px;
   display: flex;
+  align-items: center;
+}
+
+.add-entry-button {
+  height: 30px;
+  width: 100px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+
+.add-entry-button:hover {
+  cursor: pointer;
+  background-color: rgb(60, 0, 60);
+}
+
+.back-ground-div {
+  width: 100%;
+  height: 1000px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.419);
 }
