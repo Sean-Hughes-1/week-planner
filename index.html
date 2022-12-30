@@ -17,7 +17,38 @@
     <div id="add-button" class="row button-div">
       <button id="add-entry" class="add-entry-button" type="button">Add Entry</button>
     </div>
-    <div class="back-ground-div"></div>
+    <div class="back-ground-div hidden"></div>
+    <div class="modal">
+      <div class="modal-title">
+        <h2>Add Entry</h2>
+      </div>
+      <div class="form-container">
+        <form id="entry-form">
+          <select name="days" id="days">
+            <option value="DayOfWeek">Day of Week</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+          <select name="time" id="time">
+            <option value="TimeofDay">Time</option>
+            <option value="0500">0500</option>
+            <option value="0600">0600</option>
+            <option value="0700">0700</option>
+            <option value="0800">0800</option>
+            <option value="0900">0900</option>
+            <option value="1000">1000</option>
+            <option value="1100">1100</option>
+            <option value="1200">1200</option>
+            <option value="1300">1300</option>
+          </select>
+        </form>
+      </div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
