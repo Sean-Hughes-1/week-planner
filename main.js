@@ -47,25 +47,24 @@ function toggleView(show) {
     modalBackground.className = 'back-ground-div hidden';
   }
 }
+var datatest = {
+  time: '08:00',
+  notes: 'test notes'
+};
 
+renderTable(datatest);
 function renderTable(data) {
-  var table = document.createElement('table');
-  table.className = 'event-table';
-
-  var thead = document.createElement('thead');
-  var trHead = document.createElement('tr');
   var tr = document.createElement('tr');
-  var th1 = document.createElement('th');
-  var th2 = document.createElement('th');
-  var tbody = document.createElement('tbody');
-  var td = document.createElement('td');
+  var tbody = document.querySelector('tbody');
+  var tdTime = document.createElement('td');
+  var tdDesc = document.createElement('td');
 
-  table.appendChild(thead);
-  thead.appendChild(trHead);
-  trHead.appendChild(th1);
-  trHead.appendChild(th2);
-  table.appendChild(tbody);
+  tdTime.textContent = data.time;
+  tdDesc.textContent = data.notes;
+
   tbody.appendChild(tr);
-  tr.appendChild(td);
-  tr.appendChild(td);
+  tr.appendChild(tdTime);
+  tr.appendChild(tdDesc);
+
+  return tr;
 }
