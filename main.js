@@ -6,6 +6,7 @@ var day = document.getElementById('days');
 var time = document.getElementById('time');
 var notes = document.getElementById('text-area');
 var entryForm = document.getElementById('entry-form');
+
 var data = {
   entries: []
 };
@@ -45,4 +46,26 @@ function toggleView(show) {
     modalHider.className = 'modal-hider hidden';
     modalBackground.className = 'back-ground-div hidden';
   }
+}
+
+function renderTable(data) {
+  var table = document.createElement('table');
+  table.className = 'event-table';
+
+  var thead = document.createElement('thead');
+  var trHead = document.createElement('tr');
+  var tr = document.createElement('tr');
+  var th1 = document.createElement('th');
+  var th2 = document.createElement('th');
+  var tbody = document.createElement('tbody');
+  var td = document.createElement('td');
+
+  table.appendChild(thead);
+  thead.appendChild(trHead);
+  trHead.appendChild(th1);
+  trHead.appendChild(th2);
+  table.appendChild(tbody);
+  tbody.appendChild(tr);
+  tr.appendChild(td);
+  tr.appendChild(td);
 }

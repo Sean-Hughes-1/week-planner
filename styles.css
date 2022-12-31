@@ -6,11 +6,6 @@ body {
   margin: 0;
 }
 
-td,
-th {
-  width: 50%;
-}
-
 .container {
   display: flex;
   width: 800px;
@@ -116,8 +111,24 @@ th {
   top: 30%;
 }
 
-.event-table {
-  text-align: left;
-  width: 500px;
+table.event-table {
+  width: 100%;
+  background-color: #fff;
   border-collapse: collapse;
+  border-width: 0;
+  border-color: #000;
+  border-style: solid;
+  color: #000;
+}
+
+table.event-table td,
+table.event-table th {
+  border-width: 0;
+  border-color: #000;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.event-table thead {
+  background-color: #b2b1ae;
 }
