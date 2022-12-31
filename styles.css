@@ -6,6 +6,11 @@ body {
   margin: 0;
 }
 
+td,
+th {
+  width: 50%;
+}
+
 .container {
   display: flex;
   width: 800px;
@@ -109,4 +114,10 @@ body {
   height: 275px;
   padding: 10px;
   top: 30%;
+}
+
+.event-table {
+  text-align: left;
+  width: 500px;
+  border-collapse: collapse;
 }
