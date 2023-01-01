@@ -47,12 +47,7 @@ function toggleView(show) {
     modalBackground.className = 'back-ground-div hidden';
   }
 }
-var datatest = {
-  time: '08:00',
-  notes: 'test notes'
-};
 
-renderTable(datatest);
 function renderTable(data) {
   var tr = document.createElement('tr');
   var tbody = document.querySelector('tbody');
